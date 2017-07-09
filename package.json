@@ -4,7 +4,11 @@
   "description": "Make Liberty Great Again website.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node ./dist",
+    "build": "babel src --out-dir dist",
+    "watch": "babel src --watch --out-dir dist",
+    "compile-less": "grunt compile-less",
+    "watch-less": "grunt watch"
   },
   "repository": {
     "type": "git",
@@ -47,6 +51,7 @@
     "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-react": "^6.24.1",
+    "bootstrap": "^3.3.7",
     "eslint": "^4.2.0",
     "eslint-plugin-react": "^7.1.0",
     "grunt": "^1.0.1",

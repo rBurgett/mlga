@@ -1,0 +1,37 @@
+@import "bootstrap/bootstrap.less";
+
+ul.nav.navbar-inverse.footer-nav {
+  background-color: #000;
+  li a:hover {
+    background-color: #BBB;
+  }
+}
+
+.blog-footer-flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blog-post-body-container p {
+  margin-bottom: 32px;
+}
+
+
+.email-subscription-column {
+  display: none;
+}
+
+.email-subscription-button {
+  display: inline-block;
+}
+
+@media (min-width: @screen-lg-min) {
+  .email-subscription-column {
+    display: block;
+  }
+  .email-subscription-button {
+    display: none;
+  }
+}
